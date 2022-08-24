@@ -7,7 +7,9 @@ Second, users can provide feedback based on the results. Our model would use fee
 Third, we also support an inference scenario; when the result is acceptable for customers, we will train a supervised model based on the result so that the model can make inference for future inference data.
 # 3.Step by Step Guidence
 ## Upload Data
-Select provided data files on the left panel of the portal or upload user’s own dataset (Only Emission data is available now) 
+Select provided data files on the left panel of the portal or upload user’s own dataset。
+![image](https://user-images.githubusercontent.com/36343326/186343055-22613b5a-753e-44d1-a120-ba57b2e172d0.png)
+
 ## Set Up Human Intelligence 
 For users to deliver human intelligence, we designed a SQL-like config module. It is composed of 4 basic conceptions, including group, slice, measure, and anomaly type. 
 ## Measure: 
@@ -16,6 +18,8 @@ required, a numerical column, indicating intuitive measure of anomalies.
 optional, column names of subgroups, we separate data into different subgroups and conduct detection within each subgroup. For example, separate data into different countries. 
 ## Slice: 
 optional, column names of slicers, we slice each group of data into different slices, then aggregate the data to slice level and conduct anomaly detection. For example, slice data into different regions and aggregate the measure values from the same region, then the algorithm will detect anomalous regions. 
+![image](https://user-images.githubusercontent.com/36343326/186342971-1cc4aa49-c38a-4dfd-904c-187555e4fc6b.png)
+
 ## Aggregation method: 
 'Average', 'Max', 'Min', 'Sum', 'Percentile XX'(XX percentiles, where XX is an integer value from 1 to 99)]
 Default: 'Average'
