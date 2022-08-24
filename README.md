@@ -27,8 +27,8 @@ Default: 'Average'
 
 # 4. Result
 Click the ‘Run’ button to get the anomaly detection result.
-•	Detected Anomaly Overview: the graph shows the detected anomaly number and model-filtered false positive anomaly number of each human intelligence.
-•	Result Filter: users can filter the result with specific column value.
-•	Top 5 Anomaly: anomalies with top 5 anomaly score are shown by default. Click on the ‘show graph’ button to see the visualized explanation.
+## Detected Anomaly Overview: the graph shows the detected anomaly number and model-filtered false positive anomaly number of each human intelligence.
+## Result Filter: users can filter the result with specific column value.
+## Top 5 Anomaly: anomalies with top 5 anomaly score are shown by default. Click on the ‘show graph’ button to see the visualized explanation.
 
 
