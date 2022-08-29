@@ -33,11 +33,12 @@ We define several types of anomalies to address different application scenarios.
    o  **Non-TS**: Distribution of each slice is estimated, and the similarity between estimated distributions is used to measure the relationship between two slices. The minor relationships are anomalies. 
 
 5. Label: users can also label some samples based on the platform’s outputs to refine the data. To improve the detection performance further, our platform has a semi-supervised learning process to make use of the additional labeled data.
+
+
+Scenarios: a supermarket is now selling 18 fruits with different prices and with colorful 18 posters.
 ![image](https://user-images.githubusercontent.com/36343326/187212574-3ee82b17-258c-4de6-8a43-09e0b9802a97.png)
 
 ### Measure: 
-
-Scenarios: A supermarket is now selling 18 fruits with different prices and with colorful 18 posters.
 
 This is a required numerical content, indicating an intuitive measure of anomalies. For example, fruit price is a measure.
 
