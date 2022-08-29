@@ -1,9 +1,6 @@
 # 1.     How non-time series anomaly detection can help your business
 Non-time series anomaly detection allows companies to identify or even predict abnormal patterns in unbounded data streams. Whether you are a large retailer identifying positive buying behaviors, a financial services provider detecting fraud, or a sustainability customer, identifying and mitigating potential greenhouse gases from equipment. In this post, we walk through an AI and human combined pattern for detecting anomalies in tabular data. 
 
-![image-20220829180253454](../../../../AppData/Roaming/Typora/typora-user-images/image-20220829180253454.png)
-
-
 
 # 2.    Step by Step Guidance
 ## 2.1 Upload Data
@@ -36,17 +33,7 @@ We define several types of anomalies to address different application scenarios.
    o  **Non-TS**: Distribution of each slice is estimated, and the similarity between estimated distributions is used to measure the relationship between two slices. The minor relationships are anomalies. 
 
 5. Label: users can also label some samples based on the platform’s outputs to refine the data. To improve the detection performance further, our platform has a semi-supervised learning process to make use of the additional labeled data.
-   ![image](https://user-images.githubusercontent.com/36343326/186331938-dc93049a-0279-4f74-9a12-5c2a591bf19c.png)
-
-
-
-
-
-
-
-![image-20220829181158579](../../../../AppData/Roaming/Typora/typora-user-images/image-20220829181158579.png)
-
-
+![image](https://user-images.githubusercontent.com/36343326/187212574-3ee82b17-258c-4de6-8a43-09e0b9802a97.png)
 
 ### Measure: 
 
@@ -54,24 +41,20 @@ Scenarios: A supermarket is now selling 18 fruits with different prices and with
 
 This is a required numerical content, indicating an intuitive measure of anomalies. For example, fruit price is a measure.
 
-![image-20220829173918025](../../../../AppData/Roaming/Typora/typora-user-images/image-20220829173918025.png)
-
-
-
 ### Group: 
 We separate data into different subgroups and conduct detection within each subset. Each group is separated from another group. For example, 
 
-1. **Group 1:**Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple.
+1. **Group 1:** Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple.
 
-   ![image-20220829181730030](../../../../AppData/Roaming/Typora/typora-user-images/image-20220829181730030.png)
+![image](https://user-images.githubusercontent.com/36343326/187212713-089e3989-2658-4d13-8a9f-227b0eb23969.png)
 
 2. **Group 2:** Peach, Kiwi, Melon, Banana, White Grape, Plum. 
 
-   ![image-20220829181743507](../../../../AppData/Roaming/Typora/typora-user-images/image-20220829181743507.png)
+![image](https://user-images.githubusercontent.com/36343326/187212814-2b0bad81-ccf3-44fb-8555-8bb149f95287.png)
 
 3. **Group 3:** Orange, Apricot, Mango, Watermelon, Pineapple.  
 
-   ![image-20220829181809890](../../../../AppData/Roaming/Typora/typora-user-images/image-20220829181809890.png)
+![image](https://user-images.githubusercontent.com/36343326/187212875-3f92a2ad-9f65-4ed2-b6a8-3302157736fd.png)
 
 ### Slice: 
 We slice each group of data, then aggregate the data to slice level and conduct anomaly detection. For example, slice by poster colors, posters include four colors: 
