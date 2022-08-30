@@ -32,7 +32,7 @@ We define several types of anomalies to address different application scenarios.
 
    o  **Non-TS**: Distribution of each slice is estimated, and the similarity between estimated distributions is used to measure the relationship between two slices. The minor relationships are anomalies. 
 
-5. Label: users can also label some samples based on the platform’s outputs to refine the data. To improve the detection performance further, our platform has a semi-supervised learning process to make use of the additional labeled data.
+5. **Label**: users can also label some samples based on the platform’s outputs to refine the data. To improve the detection performance further, our platform has a semi-supervised learning process to make use of the additional labeled data.
 
 
 Scenarios: a supermarket is now selling 18 fruits with different prices and with colorful 18 posters.
