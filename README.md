@@ -26,7 +26,7 @@ We define several types of anomalies to address different application scenarios.
 
    o  **Slice anomaly**: Data are divided into different slices (e.g., different regions) first. 
 
-4. Correlation: we assume that under normal conditions the relationship between two slices of different groups is constant. 
+4. **Correlation**: we assume that under normal conditions the relationship between two slices of different groups is constant. 
 
    o  **TS**: Temporal correlation is used to measure the relationship between two slices in different groups. Anomalies are those few pairs of slices that significantly deviate from the majority. 
 
