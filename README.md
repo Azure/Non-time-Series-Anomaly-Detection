@@ -7,6 +7,9 @@ Non-time series anomaly detection allows companies to identify or even predict a
 Upload your data files on the left panel of the portal.[Sample data](https://microsoftapc-my.sharepoint.com/:x:/g/personal/jinruishao_microsoft_com/EZMtoVACpTpEo03dh2FWiccBSexo8X5RzqBe7PMDNNNT-Q?e=AyoShL)
 ![image](https://user-images.githubusercontent.com/36343326/186343055-22613b5a-753e-44d1-a120-ba57b2e172d0.png)
 
+Scenarios: a supermarket is now selling 18 fruits with different prices.
+![image](https://user-images.githubusercontent.com/36343326/187212574-3ee82b17-258c-4de6-8a43-09e0b9802a97.png)
+
 <img width="258" alt="image" src="https://user-images.githubusercontent.com/36343326/187346894-e72c5a71-16c2-4432-b6dd-985218464621.png">
 
 
@@ -35,10 +38,6 @@ We define several types of anomalies to address different application scenarios.
    o  **Non-TS**: Distribution of each slice is estimated, and the similarity between estimated distributions is used to measure the relationship between two slices. The minor relationships are anomalies. 
 
 5. **Label**: users can also label some samples based on the platform’s outputs to refine the data. To improve the detection performance further, our platform has a semi-supervised learning process to make use of the additional labeled data.
-
-
-Scenarios: a supermarket is now selling 18 fruits with different prices and with colorful 18 posters.
-![image](https://user-images.githubusercontent.com/36343326/187212574-3ee82b17-258c-4de6-8a43-09e0b9802a97.png)
 
 ### Measure: 
 
