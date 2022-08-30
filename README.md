@@ -1,12 +1,14 @@
 # 1.     How non-time series anomaly detection can help your business
 Non-time series anomaly detection allows companies to identify or even predict abnormal patterns in unbounded data streams. Whether you are a large retailer identifying positive buying behaviors, a financial services provider detecting fraud, or a sustainability customer, identifying and mitigating potential greenhouse gases from equipment. In this post, we walk through an AI and human combined pattern for detecting anomalies in tabular data. 
 
-
 # 2.    Step by Step Guidance
 ## 2.1 Upload Data
 
-Upload your data files on the left panel of the portal.
+Upload your data files on the left panel of the portal.[Sample data](https://microsoftapc-my.sharepoint.com/:x:/g/personal/jinruishao_microsoft_com/EZMtoVACpTpEo03dh2FWiccBSexo8X5RzqBe7PMDNNNT-Q?e=AyoShL)
 ![image](https://user-images.githubusercontent.com/36343326/186343055-22613b5a-753e-44d1-a120-ba57b2e172d0.png)
+
+<img width="258" alt="image" src="https://user-images.githubusercontent.com/36343326/187346894-e72c5a71-16c2-4432-b6dd-985218464621.png">
+
 
 ## 2.1 Set Up Human Intelligence 
 
@@ -45,32 +47,21 @@ This is a required numerical content, indicating an intuitive measure of anomali
 ### Group: 
 We separate data into different subgroups and conduct detection within each subset. Each group is separated from another group. For example, 
 
-1. **Group 1:** Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple.
-
-![image](https://user-images.githubusercontent.com/36343326/187212713-089e3989-2658-4d13-8a9f-227b0eb23969.png)
-
-2. **Group 2:** Peach, Kiwi, Melon, Banana, White Grape, Plum. 
-
-![image](https://user-images.githubusercontent.com/36343326/187212814-2b0bad81-ccf3-44fb-8555-8bb149f95287.png)
-
-3. **Group 3:** Orange, Apricot, Mango, Watermelon, Pineapple.  
-
-![image](https://user-images.githubusercontent.com/36343326/187212875-3f92a2ad-9f65-4ed2-b6a8-3302157736fd.png)
+1. **Group:** Item name: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.  
 
 ### Slice: 
-We slice each group of data, then aggregate the data to slice level and conduct anomaly detection. For example, slice by poster colors, posters include four colors: 
+We slice each group of data, then aggregate the data to slice level and conduct anomaly detection. For example, slice by production region, which include three regions: 
 
-1. Yellow
-2. Purple
-3. Green
-4. Blue. 
+1. shanghai
+2. Beijing
+3. Shenzhen
 
-If users choose the poster color as a slice,so for group 1, will be:
 
-1. Yellow: Pomegranate
-2. Purple: Pear, Lemon
-3. Green: Grapes, Jonagold apple
-4. Blue: Apple
+If users choose the production region as a slice,so for group 1, will be:
+
+1. Shanghai: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.
+2. Beijing: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.
+3. Shenzhen: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.
 
 ## Aggregation method: 
 1. Average:(Default)
