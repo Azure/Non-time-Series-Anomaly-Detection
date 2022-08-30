@@ -44,12 +44,14 @@ We define several types of anomalies to address different application scenarios.
 This is a required numerical content, indicating an intuitive measure of anomalies. For example, fruit price is a measure.
 
 ### Group: 
-We separate data into different subgroups and conduct detection within each subset. Each group is separated from another group. For example, 
+We separate data into different subgroups and conduct detection within each subset. Each group is separated/isolated from another group. For example, 
 
 1. **Group:** Item name: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.  
 
+Note: If something did not specify into group and slice, the model will not look them at all.
+
 ### Slice: 
-We slice each group of data, then aggregate the data to slice level and conduct anomaly detection. For example, slice by production region, which include three regions: 
+We slice each group of data, then aggregate the data to slice level and conduct anomaly detection. With slice, the model will looking for anomaly based on your slice, all other dimensions also be take into considerations. For example, slice by production region, which include three regions: 
 
 1. shanghai
 2. Beijing
@@ -63,7 +65,8 @@ If users choose the production region as a slice,so for group 1, will be:
 3. Shenzhen: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.
 
 ## Aggregation method: 
-1. Average:(Default)
+This is only aplicable to measure column. 
+1. Average:(Default) this is only aplicable to measure column. 
 2. Max
 3. Min
 4. Sum
