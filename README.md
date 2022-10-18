@@ -68,7 +68,7 @@ If users choose the production region as a slice,so for group 1, will be:
 2. Beijing: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.
 3. Shenzhen: Pomegranate, Pear, Grapes, Apple, Lemon, Jonagold Apple, Peach, Kiwi, Melon, Banana, White Grape, Plum, Orange, Apricot, Mango, Watermelon, Pineapple,Organaic Watermelon.
 
-## 🎉️Aggregation method: 
+## 🎉️2.3 Aggregation method: 
 This is only aplicable to measure column. 
 1. Average:(Default) this is only aplicable to measure column. 
 2. Max
@@ -111,4 +111,4 @@ If you have clear definition about the anomaly, for example, 10 times value  cha
 
 If you don’t have much context about the data, and not sure how to define a rule, you can use **auto-detection** to get an initial result and check the result by the "explanation" column, you would find some false positives or false negatives based on your knowledge, and then you can translate your knowledge to a labeling rule, and then feed them as an extra input for the model, and our model would use them to modify the detect results. In this way, you are using the rule like providing feedback without labeling any columns, just telling that there could be anomalies. And of course, if you would rather provide label feedback you can give us feedback labels directly.
 
- 
+ ![image-20221018184224888](assets/image-20221018184224888.png)
